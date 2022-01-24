@@ -9,6 +9,70 @@
   --gainsboro: #dee2e8;
 }
 
+.hero {
+  font-family: 'Source Serif Pro';
+  font-size: 5rem;
+  color: var(--prussian-blue);
+}
+
+.heading-1 {
+  font-family: 'Source Serif Pro';
+  font-size: 3rem;
+  color: var(--prussian-blue);
+}
+
+.heading-2 {
+  font-family: 'Open Sans Semi-bold';
+  font-size: 2.4rem;
+  color: var(--prussian-blue);
+}
+
+.heading-3 {
+  font-family: 'Open Sans Bold';
+  font-size: 2rem;
+  color: var(--prussian-blue);
+}
+
+.heading-4 {
+  font-family: 'Open Sans Semi-bold';
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  color: var(--black);
+}
+
+.heading-5 {
+  font-family: 'Open Sans Condensed Bold';
+  font-size: 1.8rem;
+  color: var(--dark-gray);
+}
+
+.body-bold {
+  font-family: 'Open Sans Bold';
+  font-size: 1.6rem;
+  line-height: 3rem;
+  color: var(--dark-gray);
+}
+
+.body-large {
+  font-family: 'Open Sans Regular';
+  font-size: 1.6rem;
+  line-height: 3rem;
+  color: var(--dark-gray);
+}
+
+.body-medium {
+  font-family: 'Open Sans Regular';
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  color: var(--black);
+}
+
+.caption {
+  font-family: 'Open Sans Semi-bold';
+  font-size: 1.2rem;
+  color: var(--oxford-blue);
+}
+
 a {
   color: var(--lapis-lazuli);
 }
