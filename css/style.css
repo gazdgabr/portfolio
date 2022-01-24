@@ -1,0 +1,14 @@
+:root {
+  --prussian-blue: #273852;
+  --white: #fff;
+  --dark-gray: #707070;
+  --black: #111;
+  --oxford-blue: #192333;
+  --lapis-lazuli: #3360a3;
+  --candy-pink: #e8666d;
+  --gainsboro: #dee2e8;
+}
+
+a {
+  color: var(--lapis-lazuli);
+}
