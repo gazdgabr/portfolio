@@ -27,8 +27,9 @@
   color: var(--prussian-blue);
 }
 
-.heading-3 {
-  font-family: 'Open Sans Bold';
+.heading-3, .nav-selected {
+  font-family: 'Open Sans';
+  font-weight: 700;
   font-size: 2rem;
   color: var(--prussian-blue);
 }
@@ -46,6 +47,12 @@
   color: var(--dark-gray);
 }
 
+.nav-unselected {
+  font-family: 'Open Sans';
+  font-size: 2rem;
+  color: var(--dark-gray);
+}
+
 .body-bold {
   font-family: 'Open Sans Bold';
   font-size: 1.6rem;
@@ -54,14 +61,14 @@
 }
 
 .body-large {
-  font-family: 'Open Sans Regular';
+  font-family: 'Open Sans';
   font-size: 1.6rem;
   line-height: 3rem;
   color: var(--dark-gray);
 }
 
 .body-medium {
-  font-family: 'Open Sans Regular';
+  font-family: 'Open Sans';
   font-size: 1.4rem;
   line-height: 2.4rem;
   color: var(--black);
@@ -76,3 +83,26 @@
 a {
   color: var(--lapis-lazuli);
 }
+
+nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+
+}
+
+.nav--layout {
+  display: flex;
+  flex-direction: row;
+  padding: 6vh 6vh;
+  justify-content: flex-end;
+}
+
+.nav-item {
+  padding: 1rem 0rem 1rem 4vw;
+}
+
+.nav-item:hover {
+  font-weight: 700;
+}
+
+supports
