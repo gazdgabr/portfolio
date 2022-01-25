@@ -95,6 +95,7 @@ nav a {
   flex-direction: row;
   padding: 6vh 6vh;
   justify-content: flex-end;
+  background-color: var(--gainsboro)
 }
 
 .nav-item {
