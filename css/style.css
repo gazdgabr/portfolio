@@ -98,11 +98,18 @@ nav a {
 }
 
 .nav-item {
-  padding: 1rem 0rem 1rem 4vw;
+  margin: 1rem 0rem 1rem 4vw;
+  padding-bottom: .5rem;
 }
 
 .nav-item:hover {
   font-weight: 700;
 }
+
+#work .work-nav, #about .about-nav, #contact .contact-nav {
+  border-bottom: .3rem solid var(--candy-pink);
+  stroke-linecap: round;
+}
+
 
 supports
