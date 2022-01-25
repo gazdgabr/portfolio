@@ -22,8 +22,9 @@
 }
 
 .heading-2 {
-  font-family: 'Open Sans Semi-bold';
+  font-family: 'Open Sans';
   font-size: 2.4rem;
+  font-weight: 600;
   color: var(--prussian-blue);
 }
 
@@ -35,8 +36,9 @@
 }
 
 .heading-4 {
-  font-family: 'Open Sans Semi-bold';
+  font-family: 'Open Sans';
   font-size: 1.8rem;
+  font-weight: 600;
   line-height: 2.4rem;
   color: var(--black);
 }
@@ -54,8 +56,9 @@
 }
 
 .body-bold {
-  font-family: 'Open Sans Bold';
+  font-family: 'Open Sans';
   font-size: 1.6rem;
+  font-weight: 700;
   line-height: 3rem;
   color: var(--dark-gray);
 }
@@ -75,9 +78,23 @@
 }
 
 .caption {
-  font-family: 'Open Sans Semi-bold';
+  font-family: 'Open Sans';
   font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
   color: var(--oxford-blue);
+}
+
+.button {
+  font-family: 'Open Sans';
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 1.5rem;
+  color: var(--white);
+  background-color: var(--candy-pink);
+  border: none;
+  border-radius: .5rem;
+  cursor: pointer;
 }
 
 a {
