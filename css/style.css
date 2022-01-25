@@ -18,6 +18,7 @@
 .heading-1 {
   font-family: 'Source Serif Pro';
   font-size: 3rem;
+  font-weight: 700;
   color: var(--prussian-blue);
 }
 

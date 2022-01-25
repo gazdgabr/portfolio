@@ -26,6 +26,7 @@
 }
 
 .hero-text-style {
+  font-weight: 700;
   color: var(--lapis-lazuli);
 }
 
@@ -47,4 +48,23 @@
   grid-row-start: 3;
   align-self: center;
   justify-self: left;
+}
+
+.odd-project-layout {
+  margin: 30vh 10vw 30vh 0;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-column-gap: 10vw;
+}
+
+.project-text-wrapper {
+  grid-column:2/3;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.project-description-spacing {
+  margin: 2rem 0 3rem 0;
 }
