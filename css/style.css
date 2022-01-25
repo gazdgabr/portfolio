@@ -12,6 +12,7 @@
 .hero {
   font-family: 'Source Serif Pro';
   font-size: 5rem;
+  font-weight: 700;
   color: var(--prussian-blue);
 }
 
@@ -130,5 +131,27 @@ nav a {
   stroke-linecap: round;
 }
 
+.hero-style {
+  background-color: var(--gainsboro);
+}
 
-supports
+.project-hero-layout {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-gap: 4rem;
+  padding: 10vh 5vw 3vh 5vw;
+}
+
+.project-hero-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project-hero-text-spacing {
+  margin-bottom: 1.5rem;
+}
+
+.project-hero-image{
+  width: 50vw;
+}
