@@ -27,6 +27,7 @@
   font-family: 'Open Sans';
   font-size: 2.4rem;
   font-weight: 600;
+  text-transform: uppercase;
   color: var(--prussian-blue);
 }
 
@@ -55,6 +56,17 @@
   font-family: 'Open Sans';
   font-size: 2rem;
   color: var(--dark-gray);
+}
+
+.quote {
+  font-family: 'Open Sans';
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 3rem;
+  font-style: italic;
+  text-align: center;
+  color: var(--black);
+  margin: 3.5rem 0;
 }
 
 .body-bold {
@@ -97,6 +109,14 @@
   border: none;
   border-radius: .5rem;
   cursor: pointer;
+}
+
+hr {
+  width: 5rem;
+  height: 0.1rem;
+  background-color: var(--lapis-lazuli);
+  border: none;
+  margin: 2rem 0 0 0;
 }
 
 a {
@@ -152,6 +172,18 @@ nav a {
   margin-bottom: 1.5rem;
 }
 
-.project-hero-image{
+.project-hero-image {
   width: 50vw;
+}
+
+.project-body-wrapper {
+  height: 500vh;
+  margin: 0 12vw 0 12vw;
+}
+
+.project-section-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20vh 0 7.5rem 0;
 }
