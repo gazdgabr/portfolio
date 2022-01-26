@@ -47,9 +47,10 @@
 }
 
 .heading-5 {
-  font-family: 'Open Sans Condensed Bold';
+  font-family: 'Open Sans Condensed';
   font-size: 1.8rem;
-  color: var(--dark-gray);
+  font-weight: 400;
+  color: var(--oxford-blue);
 }
 
 .nav-unselected {
@@ -119,8 +120,15 @@ hr {
   margin: 2rem 0 0 0;
 }
 
+iframe {
+  align-content: center;
+}
 a {
   color: var(--lapis-lazuli);
+}
+
+p > a {
+  font-weight: 700;
 }
 
 nav a {

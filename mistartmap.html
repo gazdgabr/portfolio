@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/mistartmap.css">
-  </head>
+    <link href="css/lightbox.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Source+Serif+Pro:wght@400;700&display=swap" rel="stylesheet">  </head>
   </head>
 
   <body id="work">
@@ -80,13 +83,13 @@
         <h3 class="heading-3 subsection-spacing">User Groups</h3>
         <p class="body-large body-paragraph-margin">Our foundational goal for this project was to support two user groups: public health and government decision-makers, and the public. From this goal, our first two requirements emerged:</p>
         <div class="overview-double-column overview-double-column-space-between">
-          <div class="standard-flex-column" style="background-color: aqua;">
-            <img class="user-group-image" src="assets/msm-group-1-government.svg" alt="Group 1: Government - Public health and government decision-makers">
+          <div class="standard-flex-column">
+            <img class="user-group-image" src="assets/msm-group1-government.svg" alt="Group 1: Government - Public health and government decision-makers">
             <h4 class="heading-4">Requirement:</h4>
             <p class="body-medium">Prioritize this user group to assist in their pandemic response</p>
           </div>
-          <div class="standard-flex-column" style="background-color: brown;">
-            <img class="user-group-image" src="assets/msm-group-2-public.svg" alt="Group 2: Public - Michigan residents and the general public">
+          <div class="standard-flex-column">
+            <img class="user-group-image" src="assets/msm-group2-public.svg" alt="Group 2: Public - Michigan residents and the general public">
             <h4 class="heading-4">Requirement:</h4>
             <p class="body-medium">Ensure public access to the same data that government officials use for decision making to ensure transparency and trust</p>
           </div>
@@ -96,6 +99,85 @@
       <div class="project-section-title">
         <h2 class="heading-2">Pre-Launch</h2>
         <hr>
+      </div>
+        <h3 class="heading-3">Initial Concept</h3>
+        <p class="body-large body-paragraph-margin">The day after signing onto the project, the original 3-member design team brainstormed and wireframed our initial design. We worked with our faculty lead to gather requirements from Michigan Department of Health and Human Services (MDHHS) authorities and our advising epidemiologists from the University of Michigan School of Public Health (UMSPH).</p>
+      <div class="overview-double-column">
+        <div class="standard-flex-column">
+          <a href="assets/msm-initialideation-1.png" data-lightbox="initial-ideation" data-title="Statewide Indicators"><img src="assets/msm-initialideation-1.png"></a>
+          <span class="caption">Statewide Indicators</span>
+        </div>
+        <div class="standard-flex-column">
+          <a href="assets/msm-initialideation-2.png" data-lightbox="initial-ideation" data-title="Expanded County Indicator"><img src="assets/msm-initialideation-2.png"></a>  
+          <span class="caption">Expanded County Indicator</span>
+        </div>
+      </div>
+
+      <h3 class="heading-3 subsection-spacing">Early Research</h3>
+      <p class="body-large body-paragraph-margin">One of our big risks early on was the inability to talk to either of our user groups. Government decision-makers and public health officials were already overwhelmed with pandemic response. Public users were off the table until our data pipelines were set up correctly (so as not to cause panic or confusion with dummy data). Given these constraints, we ran our early interviews and user tests with epidemiologists and PhD students from UMSPH. They were already involved with COVID response work, but had not seen the interface, making them the best proxies for our government user group. 
+        <a href="https://docs.google.com/document/d/1EqwaZEYoPSvlKVb9siVU3eOSXJAf6EICHMOXmZLXJgo/edit?usp=sharing" target="_blank">You can view our UMSPH interview protocol here.</a></p>
+        <p class="body-large body-paragraph-margin">To help our UX and development teams better understand and empathize with our user groups, we created four personas from a synthesis of interview results and secondary research on US public health systems.</p>
+
+
+      <h5 class="heading-5">Group 1: Government</h5>
+      <div class="overview-double-column">
+        <div class="standard-flex-column">
+          <a href="assets/msm-group-1-primary@3x.png" data-lightbox="personas" data-title="Group 1 Primary Persona"><img class="side-by-side-image" src="assets/msm-group-1-primary@3x.png"></a>
+          <h4 class="heading-4">Primary Persona</h4>
+          <p class="body-medium">Jane represents state-level public health officials, such as those at MDHHS, who are responsible for public health decisions that inform state and regional restrictions.</p>
+        </div>
+        <div class="standard-flex-column">
+          <a href="assets/msm-group-1-secondary@3x.png" data-lightbox="personas" data-title="Group 1 Secondary Persona"><img class="side-by-side-image" src="assets/msm-group-1-secondary@3x.png"></a>
+          <h4 class="heading-4">Secondary Persona</h4>
+          <p class="body-medium">Betsy represents local public health officials across the state. These local officials are responsible for having in-depth familiarity with pandemic metrics in their city/county so that they can lead their locale’s response to potential outbreaks and inform state officials of their status.</p>
+        </div>
+      </div>
+
+      <h5 class="heading-5">Group 2: Public</h5>
+      <div class="overview-double-column">
+        <div class="standard-flex-column">
+          <a href="assets/msm-group-2-primary@3x.png" data-lightbox="personas" data-title="Group 2 Primary Persona"><img class="side-by-side-image" src="assets/msm-group-2-primary@3x.png"></a>
+          <h4 class="heading-4">Primary Persona</h4>
+          <p class="body-medium">Joan is our small business owner (SBO) persona. Many small businesses and restaurants in Michigan have been greatly impacted by COVID-19. SBOs we interviewed detailed their anxieties about the pandemic as they wait to reopen while making ends meet in between.</p>
+        </div>
+        <div class="standard-flex-column">
+          <a href="assets/msm-group-2-secondary@3x.png" data-lightbox="personas" data-title="Group 2 Secondary Persona"><img class="side-by-side-image" src="assets/msm-group-2-secondary@3x.png"></a>
+          <h4 class="heading-4">Secondary Persona</h4>
+          <p class="body-medium">Sam represents workforce individuals who are fortunate enough to work from home, but still have their share of worries about the pandemic, especially with regards to their children.</p>
+        </div>
+      </div>
+      <h3 class="heading-3 subsection-spacing">Implementation</h3>
+      <p class="body-large body-paragraph-margin">From here, our team worked in parallel streams to experiment with two possible implementations for the dashboard: a version in Tableau, (a commercial off-the-shelf (COTS) data visualization software), and a ground-up web solution.</p>  
+      <p class="body-large body-paragraph-margin">Designing in Tableau was intended to be the quickest solution, where we traded development time for interface appeal. But the tradeoffs ended up being too costly: we were working with significant UI constraints, slow response time, and clunky navigation. And, as a COTS software, Tableau requires costly licenses for access, which public health officials (let alone the general public) did not have.</p>
+        
+      <div class="overview-double-column text-image-align">
+        <p class="body-bold">All these factors taken together convinced the team that Tableau was not a feasible solution.</p>
+        <div class="standard-flex-column">
+        <a href="assets/msm-tableau-png-16-22-34-939@3x.png" data-lightbox="web-vs-tableau" data-title="Tableau Version"><img class="side-by-side-image" src="assets/msm-tableau-png-16-22-34-939@3x.png"></a>
+        <span class="caption">Tableau Version</span>  
+        </div>
+      </div>
+
+      <div class="overview-double-column text-image-align subsection-spacing">
+        <div class="standard-flex-column">
+        <a href="assets/msm-web-png@3x.png" data-lightbox="web-vs-tableau" data-title="Web Version"><img class="side-by-side-image" src="assets/msm-web-png@3x.png"></a>
+        <span class="caption">Web Version</span>  
+        </div>
+        <p class="body-bold">So, we focused our efforts on building a web dashboard from the ground up.</p>
+      </div>
+
+      <h3 class="heading-3 subsection-spacing">Validation</h3>
+      <p class="body-large body-paragraph-margin">Since we were unable to run user testing with public users before our launch, we ran a series of heuristic evaluations to catch any major usability issues.</p>  
+      <p class="body-large body-paragraph-margin">We ran one for each 
+        <a href="https://docs.google.com/spreadsheets/d/1Mmuo082ctQQVIfYLCd7PVE48TrzlC_dwoeoIoUWAe1s/edit?usp=sharing" target="_blank">web</a>
+         and 
+         <a href="https://docs.google.com/spreadsheets/d/10k_22_v6dk1cEFnAoMcPXQQyLpau45IlkstEWuxZCQI/edit?usp=sharing" target="_blank">mobile</a>. Each evaluation was run independently by three researchers; independent findings were aggregated into a single sheet of recommendations.  The design team reviewed the results of each heuristic evaluation with our development team to improve usability pre-launch.</p>
+        
+      <h3 class="heading-3 subsection-spacing">Release 1</h3>
+      <p class="body-large body-paragraph-margin">On May 26, 2020 Governor Gretchen Whitmer publicly introduced MI Start Map to the State of Michigan. Our dashboard project was just <span class="body-bold">36 days old</span>.</p>  
+      <p class="body-large body-paragraph-margin">In this short time, our team had faced countless challenges: pivots, redesigns, late nights, last-minute scrambles, and high-stakes demos — all powered by caffeine and a healthy dose of camaraderie.</p>
+      <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Y2fKU06NR7E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
       <div class="project-section-title">
         <h2 class="heading-2">Post-Launch</h2>
@@ -110,5 +192,9 @@
         <hr>
       </div>
 
+
+
+
+    <script src="js/lightbox-plus-jquery.js"></script>
   </body>
 </html>
