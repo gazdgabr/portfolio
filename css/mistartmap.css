@@ -5,8 +5,21 @@
 .overview-double-column {
     display: flex;
     flex-direction: row;
+}
+
+.overview-double-column-gap {
     gap: 10vw;
-    margin-top: 7.5rem;
+}
+
+.overview-double-column-space-between {
+    justify-content: space-between;
+
+}
+
+.standard-flex-column {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
 }
 
 .overview-left {
@@ -35,4 +48,12 @@
     padding: .6rem 1rem;
     background-color: var(--gainsboro);
     margin: 0 1rem 1rem 0;
+}
+
+.subsection-spacing {
+    margin-top: 7.5rem;
+}
+
+.user-group-image {
+    width: 30vw;
 }
