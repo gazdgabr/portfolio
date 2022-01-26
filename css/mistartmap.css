@@ -1,3 +1,38 @@
-.body-paragraph-margin{
+.body-paragraph-margin {
     margin: 2.5rem 0;
+}
+
+.overview-double-column {
+    display: flex;
+    flex-direction: row;
+    gap: 10vw;
+    margin-top: 7.5rem;
+}
+
+.overview-left {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 62%;
+}
+
+.overview-right {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.overview-right-spacing {
+    margin-top: 2rem;
+}
+
+.tool-container {
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 2rem;
+}
+
+.tool-tag {
+    padding: .6rem 1rem;
+    background-color: var(--gainsboro);
+    margin: 0 1rem 1rem 0;
 }
