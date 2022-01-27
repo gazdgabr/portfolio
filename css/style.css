@@ -198,7 +198,6 @@ nav a {
 }
 
 .project-body-wrapper {
-  height: 500vh;
   margin: 0 12vw 0 12vw;
 }
 
@@ -207,4 +206,82 @@ nav a {
   flex-direction: column;
   align-items: center;
   margin: 20vh 0 7.5rem 0;
+}
+
+.body-paragraph-margin {
+  margin: 2.5rem 0;
+}
+
+.overview-double-column {
+  display: flex;
+  flex-direction: row;
+  gap: 5vw;
+  margin-top: 2.5rem;
+}
+
+.overview-double-column-gap {
+  gap: 10vw;
+}
+
+.overview-double-column-space-between {
+  justify-content: space-between;
+
+}
+
+.standard-flex-column {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 1rem;
+}
+
+.overview-left {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 62%;
+}
+
+.overview-right {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.overview-right-spacing {
+  margin-top: 2rem;
+}
+
+.tool-container {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 2rem;
+  max-width: 250px;
+}
+
+.tool-tag {
+  padding: .6rem 1rem;
+  background-color: var(--gainsboro);
+  margin: 0 1rem 1rem 0;
+}
+
+.subsection-spacing {
+  margin-top: 7.5rem;
+}
+
+.side-by-side-image {
+  width: 100%;
+}
+
+.text-image-align {
+  align-items: center;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+.paragraph-image-align {
+  flex-basis: 50%;
 }

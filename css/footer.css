@@ -1,0 +1,50 @@
+footer {
+    width: 100vw;
+    background-color: var(--prussian-blue);
+    margin-top: 20rem;
+}
+
+footer .heading-3{
+    text-transform: uppercase;
+}
+
+.footer-flex-rows {
+    display: flex;  
+}
+
+.footer-flex-columns {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .footer-flex-rows a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-text-color {
+    color: white;
+}
+
+.footer-flex-top-spacing {
+    justify-content: center;
+    gap: 12rem;
+    padding-top: 10vh;
+}
+
+.footer-flex-bottom-spacing {
+    justify-content: space-between;
+    padding: 10vh 3vw 5vh 3vw;
+}
+
+.footer-flex-bottom-spacing a {
+    margin: 0 2rem;
+}
+
+footer .body-medium {
+    margin-bottom: 1rem;
+}
+
+footer a img {
+    height: 2vh;
+}
