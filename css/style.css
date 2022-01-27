@@ -28,7 +28,7 @@
   font-size: 2.4rem;
   font-weight: 600;
   text-transform: uppercase;
-  color: var(--prussian-blue);
+  color: var(--lapis-lazuli);
 }
 
 .heading-3, .nav-selected {
@@ -106,6 +106,10 @@
 
 .gray-text {
   color: var(--dark-gray)
+}
+
+.lapis-text {
+  color: var(--lapis-lazuli);
 }
 
 .button {
@@ -284,4 +288,27 @@ nav a {
 
 .paragraph-image-align {
   flex-basis: 50%;
+}
+
+.requirement-background {
+  background-color: var(--gainsboro);
+}
+
+.requirement-column {
+  gap: 3.5rem;
+  padding: 5rem;
+}
+
+.triple-column {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+
+}
+
+.small-flex-column {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  gap: 1rem;
 }

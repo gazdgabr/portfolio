@@ -1,0 +1,17 @@
+.pref-test-header {
+    display: inline;
+}
+
+.pref-test-a-meter {
+    height: 1.6rem;
+    width: 67%;
+    margin-top: 1rem;
+    background-color: var(--lapis-lazuli);
+}
+
+.pref-test-b-meter {
+    height: 1.6rem;
+    width: 33%;
+    margin-top: 1rem;
+    background-color: var(--dark-gray);
+}

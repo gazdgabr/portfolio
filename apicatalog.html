@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="/css/reset.css">
   <link rel="stylesheet" href="/css/apicatalog.css">
   <link rel="stylesheet" href="/css/footer.css">
+  <link href="css/lightbox.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -96,18 +97,173 @@
       <h2 class="heading-2">Low fidelity</h2>
       <hr>
     </div>
+
+    <h3 class="heading-3">Initial Concept</h3>
+
+    <div class="overview-double-column text-image-align">
+      <p class="body-large paragraph-image-align">We knew from previous research that many Ford development teams both provide and consume APIs. Therefore, we knew our current primary persona represented both of our user groups, (API Providers and API Consumers) and would remain relevant throughout this sprint.</p>
+      <div class="standard-flex-column">
+        <a href="assets/api-primary-persona@3x.png" data-lightbox="api-persona" data-title="Primary Persona"><img
+            class="side-by-side-image" src="assets/api-primary-persona@3x.png"></a>
+        <span class="caption">Primary Persona</span>
+      </div>
+    </div>
+
+    <p class="body-large body-paragraph-margin">With our target users in mind, we worked through a hybrid user journey/process flow to identify current process gaps and capture the basic functionality necessary to provide user value. Our flow includes steps taken by Consumers, Providers, and some considerations for our backend.</p>
+    <a href="assets/api-consumer-flow@3x.png" data-lightbox="consumer-process-flow" data-title="API Catalog Consumer Journey Process Flow"><img
+      class="side-by-side-image" src="assets/api-consumer-flow@3x.png"></a>
+      <span class="caption">API Catalog Consumer Journey Process Flow</span>
+
+    <h3 class="heading-3 subsection-spacing">Brainstorming & Wireframes</h3>
+    <p class="body-large body-paragraph-margin">Using this diagram, we brainstormed the initial design and sketched out a basic flow using Invision. At this stage, we <span class="body-bold">decided to divide the work into two sprints: application registration, and API subscription.</span> In our sketches, we identified that application registration must come before subscription - thus we decided to focus on delivering that value first.</p>
+    <a href="assets/api-lofi-flow@3x.png" data-lightbox="consumer-process-flow" data-title="Consumer Journey User Flow"><img
+      class="side-by-side-image" src="assets/api-lofi-flow@3x.png"></a>
+      <span class="caption">Consumer Journey User Flow</span>
+
+    <p class="body-large body-paragraph-margin">As we continued to ideate and flesh out the design for the application registration flow, we often turned to users for quick feedback. We used unmoderated, asynchronous methods like surveys, polls, and preference tests to help with early design decisions before we ever began validation.</p>
+    <p class="body-large body-paragraph-margin">A great example of this was a preference test we ran for an early version of the application management screen. To determine the best way to display credentials to users, we ran a quick preference test asking users the same set of usability questions for each design, then asking them to pick their preferred design and explain their reasoning.</p>
+
+
+    <div class="overview-double-column">
+      <div class="standard-flex-column">
+        <a href="assets/api-design-a@3x.png" data-lightbox="preference-test"
+          data-title="Statewide Indicators"><img class="side-by-side-image" src="assets/api-design-a@3x.png"></a>
+        <div>
+          <h5 class="heading-5 pref-test-header">Design A</h5>
+          <span class="body-medium lapis-text">- 67%</span>
+          <div class="pref-test-a-meter"></div>
+      </div>
+      </div>
+      <div class="standard-flex-column">
+        <a href="assets/api-design-b@3x.png" data-lightbox="preference-test"
+          data-title="Expanded County Indicator"><img class="side-by-side-image" src="assets/api-design-b@3x.png"></a>
+          <div>
+            <h5 class="heading-5 pref-test-header">Design B</h5>
+            <span class="body-medium gray-text">- 33%</span>
+            <div class="pref-test-b-meter"></div>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="heading-3 subsection-spacing">Validation</h3>
+    <p class="body-large body-paragraph-margin">After the preference test, we moved into our first round of validation using the clear winner: Design A. At a high level, our goal was to <span class="body-bold">verify that users understood the registration and management process at a conceptual level</span>, and then identify whether any features were troublesome.</p>
+    <p class="body-bold body-paragraph-margin"><a href="https://drive.google.com/file/d/1yXUcrk9RSu6fg72ZvT9G1REUdau7sVlU/view?usp=sharing"
+    target="_blank">You can view our validation report here.</a></p>
+
+    <p class="body-large body-paragraph-margin">Overall the design was successful, but <span class="body-bold">participants struggled with our new dual secret model.</span> With this model, we allow users to create a second client secret so that in the event of a mistake or expiration, their secrets can be rotated without downtime to their application.</p>
+    <p class="body-large body-paragraph-margin">In fact, none of our participants understood this new concept as conveyed by our design. So we went back and ideated further until we came up with a design we felt better conveyed the intention of the dual secret model. In this version, secrets are color coded by status, and clearly display both the generation and expiration dates, while allowing users to delete a secret as long as two are available. </p>
+    <p class="body-large body-paragraph-margin">We revalidated using this design, and had an <span class="body-bold">80% success rate rotating secrets</span>  - a resounding improvement over the first version.</p>
+    <p class="body-large body-paragraph-margin">View an 
+      <a href="https://drive.google.com/file/d/1ashfNlBUWytbZZSlKf6livklZTq29Z_p/view?usp=sharing"
+    target="_blank">export of our prototype</a> and our
+    <a href="https://drive.google.com/file/d/1LOF02CjRZWJLOXm3riGsSF0jsMFXbH48/view?usp=sharing"
+    target="_blank">second validation report</a>.</p>
+
     <div class="project-section-title">
       <h2 class="heading-2">High fidelity</h2>
       <hr>
     </div>
+
+    <p class="body-large body-paragraph-margin">After validation, we constructed high-fidelity mockups to hand off to our development team. However, right before handoff, we learned of a new requirement that changed everything for our consumer journey.
+      [<a href="https://youtu.be/bW7Op86ox9g" target="_blank">dun-dun-dun</a>]</p>
+    <p class="body-large body-paragraph-margin">A proximate team requested that we take ownership of an API onboarding feature they had helped us build and maintain. This made a lot of sense for us, as it provided more value as a part of our product suite, both from a user and business perspective. However, we determined that it would need to be included in our Consumer Journey, and that we would undergo another design iteration to integrate it.</p>
+    <p class="body-bold body-paragraph-margin">There were four new requirements we needed to fulfill: </p>
+    <div class="overview-double-column requirement-background">
+      <div class="standard-flex-column requirement-column">
+          <div>
+            <p class="body-bold">Paired IDs</p>
+            <p class="body-medium">Application IDs as a pair: one for prod, one for pre-prod</p>
+          </div>
+          <div>
+            <p class="body-bold">Multiple Gateways</p>
+            <p class="body-medium">Separate pairs of Application IDs for each of two API gateways</p>
+          </div>
+      </div>
+      <div class="standard-flex-column requirement-column">
+        <div>
+          <p class="body-bold">Multiple Regions</p>
+          <p class="body-medium">Separate pairs of Application IDs for China vs Global (rest of world)</p>
+        </div>
+        <div>
+          <p class="body-bold">Independence</p>
+          <p class="body-medium">Application ID generation as an independent feature, not required for users who don’t need it</p>
+        </div>
+    </div>
+    </div>
+    <p class="body-large body-paragraph-margin">The first requirement was especially challenging, conceptually, because our existing client credentials functionality allows users to request a set for each lower environment, rather than one pre-prod set to represent all. This created a mismatch between the way credentials and Application IDs were assigned.</p>
+    <p class="body-large body-paragraph-margin">Since we were already in high-fidelity, we just ideated with the current screens, experimenting different ways to display the data while separating the conceptual models of IDs and credentials.</p>
+
+    <div class="overview-double-column">
+      <div class="standard-flex-column">
+        <a href="assets/api-integrated@3x.png" data-lightbox="catalog-secrets"
+          data-title="Integrated view with both functionalities in a single tab"><img class="side-by-side-image" src="assets/api-integrated@3x.png"></a>
+        <span class="caption">Integrated view with both functionalities in a single tab</span>
+        </div>
+      <div class="standard-flex-column">
+        <a href="assets/api-bifurcated@3x.png" data-lightbox="catalog-secrets"
+          data-title="Bifurcated view with each functionality in a different tab"><img class="side-by-side-image" src="assets/api-bifurcated@3x.png"></a>
+        <span class="caption">Bifurcated view with each functionality in a different tab</span>
+        </div>
+    </div>
+    <p class="body-large body-paragraph-margin">We agreed on the additional tab and underwent another round of validation, to <span class="body-bold">disheartening results: The tabbed design implied process linearity rather than independence to participants.</span> Users generally followed tabs from left to right, using each feature as they progressed. Other users didn’t even see the tabs. Around the same time, our development team was dealing with several state change bugs brought on by the implementation of the tabbed design.</p>
+    <p class="body-large body-paragraph-margin">The team had already been through 3 major iterations of this design, and we were feeling the pressure to conclude our work here and move onto the next sprint. Stakeholders believed we didn’t have the time or resources to undergo another iteration, despite our validation outcome. The team talked about creating tutorials and instruction documentation to fill the gaps uncovered by our validation.</p>
+
+    <h3 class="heading-3 subsection-spacing">Redesign</h3>
+    <p class="body-large body-paragraph-margin">At this point, I had to dig deep in the face of adversity. I remembered why UX is my passion - I am the user’s voice, where they would otherwise have none. I value usability and feel strongly about advocating for it - so I  pushed back. Still, the team remained skeptical, so I went back to the drawing board.</p>
+    <p class="body-large body-paragraph-margin">I knew I’d have to think beyond the tabs and approach the problem from a fresh perspective. I reflected on the Catalog’s vision to be a “one stop shop” for developers - and that vision was precisely what this design needed. When I think of a “one stop shop” for metadata, I think of a dashboard. So I created a dashboard design with all functionalities weighted equally, but separated into their own containers. Additionally, the dashboard was easily manipulated to be responsive, accommodating <span class="body-bold">99% of our users’ screen resolutions</span> - a data point I collected from our Mouseflow metrics.</p>
+    <p class="body-large body-paragraph-margin">I advocated for another round of validation, and executed it within 3 days. Our validation goals were simple, and similar to previous rounds:</p>
+    
+    <ul class="body-bold">
+      <li>Validate that adding and managing client credentials is intuitive for users.</li>
+      <li>Validate that adding and managing application IDs is intuitive for users.</li>
+      <li>Validate that users understand the credentials and app ID processes to be independent and optional.</li>
+      <li>Validate users know how to manage their application’s registration information.</li>
+    </ul>
+
+    <p class="body-large body-paragraph-margin">The dashboard was a resounding success. <span class="body-bold">100%</span> of participants were able to use every dashboard feature with <span class="body-bold">no errors</span>. Participants commented about how much of an improvement over current processes the dashboard was, and <span class="body-bold">repeatedly asked when it would be available</span>.</p>
+    <p class="body-large body-paragraph-margin">Check out the interactive prototype we used for the validation interviews and have fun clicking around!</p>
+    <div class="video-container">
+      <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FbPfXolbNEk8NDu8Qqxl5lB%2FAPI-Catalog-Consumer-Journey%3Fpage-id%3D0%253A1371%26node-id%3D2226%253A27432%26viewport%3D241%252C48%252C0.02%26scaling%3Dmin-zoom%26starting-point-node-id%3D2226%253A27432" allowfullscreen></iframe>
+    </div>
+    <p class="body-large body-paragraph-margin">You can also peruse the <a href="https://drive.google.com/file/d/1VpO-bFx7urBXGo4K5GFxE69hKubVQuiK/view?usp=sharing" target="_blank">validation report</a> and view success rates for each task! 🎉</p>
+
     <div class="project-section-title">
       <h2 class="heading-2">Next steps</h2>
       <hr>
     </div>
+
+    <p class="body-large body-paragraph-margin">After validation, I worked to make sure each screen was spec’d out for a variety of screen resolutions. Since 99% of our users’ screen resolutions fell between 1280px and 1600px, I created layouts for a range of 3 screen sizes: 1280, 1440, and 1600.</p>
+
+    <div class="triple-column">
+      <div class="small-flex-column">
+        <a href="assets/api-1280@3x.png" data-lightbox="consumer-layout"
+          data-title="1280 Layout"><img class="side-by-side-image" src="assets/api-1280@3x.png"></a>
+        <span class="caption">1280 Layout</span>
+        </div>
+        <div class="small-flex-column">
+          <a href="assets/api-1440@3x.png" data-lightbox="consumer-layout"
+            data-title="1440 Layout"><img class="side-by-side-image" src="assets/api-1440@3x.png"></a>
+          <span class="caption">1440 Layout</span>
+        </div>
+        <div class="small-flex-column">
+          <a href="assets/api-1600@3x.png" data-lightbox="consumer-layout"
+            data-title="1600 Layout"><img class="side-by-side-image" src="assets/api-1600@3x.png"></a>
+          <span class="caption">1600 Layout</span>
+        </div>
+    </div>
+
+    <p class="body-large body-paragraph-margin">Implementation is currently underway - our development team has constructed the skeleton layout of the page and is putting finishing touches on the registration information section at the top of the screen.</p>
+    <p class="body-large body-paragraph-margin">Remember the second sprint for the Consumer Journey? <span class="body-bold">Subscriptions!</span></p>
+    <p class="quote">How might we allow these registered applications to be subscribed to APIs?</p>
+    <p class="body-large body-paragraph-margin">The API Platform designers are working to answer this question in Q1 of 2022!</p>
+
     <div class="project-section-title">
       <h2 class="heading-2">What I Learned</h2>
       <hr>
     </div>
+    <p class="body-large body-paragraph-margin">Throughout this sprint persistence was my best friend. Working through dozens of ideation sessions and as many iterations/validations as we did can be disheartening. A pivotal moment for me came after our 3rd iteration, when our validation yielded disappointing results, and our team wanted to press forward. I remember standing in front of my computer after an animated standup, asking myself where I was falling short as a designer, and how I’d be able to pull the pieces of this sprint together in the best interests of our users and our team. Because I couldn’t justify backing down and abandoning my principles as a designer.</p>
+    <p class="body-large body-paragraph-margin">I capitalized on this feeling of frustration and turned it into determination - as an athlete in my personal life, I have never been one to back away from a challenge. And with some extra effort and commitment not only to my users, but to myself, I was able to solve a tough problem, and learned some important lessons along the way. </p>
+    <p class="body-large body-paragraph-margin">I learned not to abandon my principles, even when it goes against the status quo and creates discomfort. I learned (again) to persist through difficult challenges, no matter how impossible they seem at the time. Because at the end of the day, my persistence came with a meaningful payoff, and it felt incredible to know that the users I had advocated for were delighted by my effort.</p>
 
   </div>
   <footer>
@@ -132,6 +288,7 @@
     </div>
   </footer>
 
+  <script src="js/lightbox-plus-jquery.js"></script>
 </body>
 
 </html>
