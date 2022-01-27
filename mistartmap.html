@@ -11,7 +11,7 @@
     <link href="css/lightbox.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Source+Serif+Pro:wght@400;700&display=swap" rel="stylesheet">  </head>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Source+Serif+Pro:wght@400;700&display=swap" rel="stylesheet">
   </head>
 
   <body id="work">
@@ -183,15 +183,120 @@
         <h2 class="heading-2">Post-Launch</h2>
         <hr>
       </div>
+      <p class="body-large body-paragraph-margin">Though our first release was cause for celebration, we knew our work had just begun.</p>
+      <p class="body-large body-paragraph-margin">We began recruiting members of the public for user testing. This was especially critical for our UX team, because up until this point, we had only tested the dashboard with users who had a high level of education and epidemiology backgrounds. <span class="body-bold">We wanted to find out whether our attempts to make the dashboard easily accessible and understandable for the average member of the public were successful.</span> We also wanted to learn more about real use cases for the dashboard - who was using it, what they used it for, and why.</p>
+
+      <h3 class="heading-3 subsection-spacing">Research</h3>
+      <p class="body-large body-paragraph-margin">We asked the following research questions to better understand how our users interact with the dashboard:</p>
+      <ul class="body-bold">
+        <li>Can users navigate the map interface?</li>
+        <li>Can users find, understand, and justify statuses at all levels?</li>
+        <li>Can users find raw, calculated, and graphical data in actionable formats?</li>
+        <li>Can users meaningfully compare data from one geographical area to another?</li>
+      </ul>
+      <p class="body-large body-paragraph-margin">All interviews were run remotely using our participant’s conferencing software of choice. Each session was divided into two parts: a semi-structured interview and a user test. During the semi-structured interview, we got to know each participant: their background, their individual experiences during the pandemic, and media consumption habits. The interview then informed the user test, where we had participants run through a series of tasks that were structured to their use of the dashboard.</p>
+      <p class="body-large body-paragraph-margin">To keep logging consistent across tests, our team used a rainbow spreadsheet to track user testing observations and flag notable issues. We also logged task data, such as time, success, and satisfaction. 
+        <a href="https://docs.google.com/spreadsheets/d/1VcbDIuVVvBr0s1-XduNq2pDk9B9KALdSBc34TqP2EJ8/edit?usp=sharing" target="_blank">You can view a sample of our user testing notes and data logs here</a>.</p>
+
+      <h5 class="heading-5">Results</h5>
+      <p class="body-large body-paragraph-margin">We ran these sessions with 11 participants from across the state. Some of our major takeaways include:</p>
+      <ul class="body-bold">
+        <li>Significant variation in ability to navigate the dashboard, influenced primarily by age and secondarily by education and occupation.</li>
+        <li>Users most frequently visit their own region and county in order to assess risk for themselves, their family, or desired activities.</li>
+        <li>“New Cases” was the most valuable indicator for every user, and was used as the primary metric for risk assessment.</li>
+        <li>Users often did not see the time slider feature; if they did, most did not know it to afford “sliding.”</li>
+        <li>Confusion about “Public Health Capacity” as a category (users typically expected it to pertain to healthcare capabilities/capacity).”</li>
+      </ul>
+
+      <h3 class="heading-3 subsection-spacing">Iterative Redesign</h3>
+      <p class="body-large body-paragraph-margin">Because of its emergent requirements, this project underwent numerous redesigns and tweaks in a relatively short time. Many of these changes have stemmed from our epidemiology team standardizing pandemic progression indicators with MDHHS and the governor’s office.  However, I want to focus on several significant changes that <span class="body-bold">directly stemmed from our user testing with both user groups.</span></p>
+      <h4 class="heading-4">Trendlines & Time</h4>
+
+      <div class="overview-double-column text-image-align">
+        <p class="body-large paragraph-image-align">Our initial design had quickly glanceable mini-trendlines intended to show trends for the most recent two weeks of data. However, we uncovered significant conceptual issues with our current implementation of time navigation - especially for the trend lines and their relationship with the date slider. When moved, the date slider would show all data as of or up until the chosen date. The trend lines would show the past two weeks of data for the chosen date (so if the slider moved back to 5/13, the trend line would display 4/29 - 5/13). This became confusing for users who had different expectations of what the trend line should display at any given time. We also observed users forgetting that they had moved the date slider, and would read trends incorrectly.</p>
+        <div class="standard-flex-column">
+        <a href="assets/msm-trendlinestime-1@3x.png" data-lightbox="trendlines-time" data-title="Before"><img class="side-by-side-image" src="assets/msm-trendlinestime-1@3x.png"></a>
+        <span class="caption">Before</span>  
+        </div>
+      </div>
+
+      <div class="overview-double-column text-image-align subsection-spacing">
+        <div class="standard-flex-column">
+        <a href="assets/msm-trendlinestime-2@3x.png" data-lightbox="trendlines-time" data-title="After"><img class="side-by-side-image" src="assets/msm-trendlinestime-2@3x.png"></a>
+        <span class="caption">After</span>  
+        </div>
+        <p class="body-large paragraph-image-align">We solved these inconsistencies by incorporating trends directly into the raw data graphs. Now, when the date slider is moved, a marker moves along the graph to show current date selection. Additionally, the graph is clickable and can be used for time navigation in the event that the date slider is overlooked by the user.</p>
+      </div>
+
+      <h4 class="heading-4 subsection-spacing">Status Proposal</h4>
+      <p class="body-large body-paragraph-margin">Our vision for MI Start Map was for it to serve as a tool that public health officials could use to make informed decisions about lifting/imposing restrictions. While the dashboard still supports that vision - it has a different mechanism than we originally planned.</p>
+
+      <div class="overview-double-column text-image-align subsection-spacing">
+        <p class="body-large paragraph-image-align">We initially showed the current risk phase (set by an MDHHS official, based on data). Beside it, a new phase proposal recommended by a system algorithm was displayed. If current and proposed phases were different, health officials would know to investigate the status of the county or region. User testing with epidemiologists uncovered concern about status proposals and how they were supported by raw data. We also knew displaying them for the public had the potential to cause confusion and disturbance surrounding official risk categorizations - but hiding them went against our goal of transparency.</p>
+        <div class="standard-flex-column">
+        <a href="assets/msm-statusproposal-1@3x.png" data-lightbox="status-proposal" data-title="Before"><img class="side-by-side-image" src="assets/msm-statusproposal-1@3x.png"></a>
+        <span class="caption">Before</span>  
+        </div>
+      </div>
+
+      <div class="overview-double-column text-image-align subsection-spacing">
+        <div class="standard-flex-column">
+        <a href="aassets/msm-statusproposal-2@3x.png" data-lightbox="trendlines-time" data-title="After"><img class="side-by-side-image" src="assets/msm-statusproposal-2@3x.png"></a>
+        <span class="caption">After</span>  
+        </div>
+        <p class="body-large paragraph-image-align">We decided to eliminate the status proposal mechanism and in its place, we designed our rainbow icon system. The minified rainbow icons show current risk level  and overall position within the 6-phase system. The current risk levels in features are generated by the system based on thresholds set by MDHHS officials. In turn, officials can look at risk levels for each indicator for a given region and determine which of the 6 phases to place it in.</p>
+      </div>
+
+
+      <p class="body-medium gray-text body-paragraph-margin"><span class="italic-text">Note:</span> We later moved away from the “rainbow” colors, which were also being used by Michigan Department of Labor to show economic recovery phases. Government officials asked us to create our own system for epidemiological risk that did not utilize any of the “rainbow” colors. I led this effort and came up with a monochromatic color scheme with a letter rating system. This color scheme is currently in use on 
+        <a href="https://mistartmap.info/mism-indicators" target="_blank">MI Start Map</a>.</p>
+
+      <h4 class="heading-4 subsection-spacing">Date Slider</h4>
+      <p class="body-large body-paragraph-margin">The earliest version of the date slider was cluttered and confusing, so we simplified it to include a single date and a better description of its function.</p>
+
+      <div class="overview-double-column">
+        <div class="standard-flex-column">
+          <a href="assets/msm-slider-1@3x.png" data-lightbox="date-slider" data-title="Version 1"><img class="side-by-side-image" src="assets/msm-slider-1@3x.png"></a>
+          <span class="caption">Version 1</span>
+        </div>
+        <div class="standard-flex-column">
+          <a href="assets/msm-slider-2@3x.png" data-lightbox="date-slider" data-title="Version 2"><img class="side-by-side-image strange-slider" src="assets/msm-slider-2@3x.png"></a>  
+          <span class="caption">Version 2</span>
+        </div>
+      </div>
+
+      <p class="body-large body-paragraph-margin">The evolution of the date slider’s label was particularly challenging. Because the slider simply changes the endpoint for the data, we knew it was important to make sure the label specified that it displayed data as of that date, not only for that date.</p> 
+      <p class="body-large body-paragraph-margin">We tried labeling the date slider with exactly what it manipulated: indicators, trends, and risk determinations. This worked for epidemiologists and public health officials, but <span class="body-bold">public users were confused by what this label meant, and were often discouraged from using the slider.</span></p>
+
+
+      <div class="overview-double-column text-image-align subsection-spacing">
+        <p class="body-large paragraph-image-align">The simplified label caters more to public users who don’t have a background in epidemiology but are familiar with common filters. Our previous versions of labeling onboarded public health officials who are now familiar with the date slider.</p>
+        <div class="standard-flex-column">
+        <a href="assets/msm-slider-3@3x.png" data-lightbox="date-slider" data-title="Version 3"><img class="side-by-side-image" src="assets/msm-slider-3@3x.png"></a>
+        <span class="caption">Version 3</span>  
+        </div>
+      </div>
+      <p class="body-medium gray-text body-paragraph-margin"><span class="italic-text">Note:</span> we later moved from a date slider to a date picker to further simplify the selection of a date, since the pandemic has gone on for so long that selecting a specific date with a slider became nearly impossible. 😭</p> 
       <div class="project-section-title">
         <h2 class="heading-2">Latest Version</h2>
         <hr>
       </div>
+
+      <p class="body-large body-paragraph-margin">You can click below to view the latest version of the dashboard. Although I’ve signed off, MI Start Map continues to be updated as the team gains more insight from user research and more requirements from public health officials.</p> 
+      <p class="body-large body-paragraph-margin">MI Start Map is still relatively young; it will continue to be maintained for as long as the COVID-19 pandemic continues to affect the lives and livelihoods of Michigan residents - which will be for the foreseeable future. <span class="body-bold">After the pandemic, I hope this tool may serve as a framework for building more robust public health tools that support a more effective and preventative response to future public health crises.</span></p> 
+      <div class="video-container">
+        <button type="button" class="button hero-button-position" onclick="window.open('https://mistartmap.info/mism-indicators','_blank')">MI Start Map</button>
+      </div>
+
+
+
+
       <div class="project-section-title">
         <h2 class="heading-2">What I Learned</h2>
         <hr>
       </div>
-
+      <p class="body-large body-paragraph-margin">Collaborating with other information professionals from different backgrounds, all of whom volunteered their time and energy, was a learning experience on its own. Each person on our team had unique experiences and skills that they brought to the team. I’ve heard it said that with diversity comes conflict, but this team was able to pull together - united by the human experience of living through a pandemic - to come out with an important public health tool, in <span class="body-bold">just 36 days.</span> I am very proud of what we have accomplished, <span class="body-bold">together.</span></p> 
+      <p class="body-large body-paragraph-margin">Another important thing I learned was how to own my discomfort with emergent requirements.  As a designer/researcher, having at least some established project requirements upfront is comfortable and makes the formation of an R&D plan easier. Because it was born out of a desire to help ease the burden on our state’s decision-makers, this project had virtually no upfront requirements. This made kickstarting the project challenging, but we were able to forge our own way by building off our own skills and design principles, our experiences living through a pandemic, and our knowledge of our primary stakeholders in government. As we iterated through design solutions, we were proactively gathering information from our stakeholders to develop requirements: their goals, their pain points, and tools they wished they had. Getting <span class="body-bold">comfortable with ambiguity</span> and being able to pivot upon formation of new requirements is now one of the best tools in my professional toolbox, and I’m looking forward to honing this skill in the future.</p> 
 
 
 

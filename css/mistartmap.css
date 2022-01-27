@@ -77,3 +77,11 @@
     justify-content: center;
     padding-top: 1rem;
 }
+
+.paragraph-image-align {
+    flex-basis: 50%;
+}
+
+.strange-slider {
+    justify-content: end;
+}

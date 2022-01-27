@@ -100,6 +100,14 @@
   color: var(--oxford-blue);
 }
 
+.italic-text {
+  font-style: italic;
+}
+
+.gray-text {
+  color: var(--dark-gray)
+}
+
 .button {
   font-family: 'Open Sans';
   font-size: 1.6rem;
@@ -120,9 +128,14 @@ hr {
   margin: 2rem 0 0 0;
 }
 
-iframe {
-  align-content: center;
+li {
+  padding-top: 3rem;;
 }
+
+li:first-child{
+  padding-top: 0;
+}
+
 a {
   color: var(--lapis-lazuli);
 }
