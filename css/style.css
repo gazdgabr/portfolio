@@ -108,6 +108,10 @@
   font-weight: 700;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
 .gray-text {
   color: var(--dark-gray)
 }

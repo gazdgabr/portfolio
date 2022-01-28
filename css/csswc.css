@@ -24,3 +24,11 @@ gap: 2.5rem;
 .small-double-col-gap {
     gap: 2vw;
 }
+
+li {
+    padding-top: 3rem;;
+  }
+
+li:first-child{
+    padding-top: 0;
+  }
