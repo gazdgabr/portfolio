@@ -1,0 +1,42 @@
+#about .heading-2 {
+    text-transform: none;
+}
+
+#about .nav--layout {
+    background-color: white;
+}
+
+#about hr {
+    width: 100%;
+    margin: .45rem 0 0 0;
+}
+
+.about-photo-spacing {
+    width: 50rem;
+    margin-top: 12vh;
+}
+
+.about-hero-margin-top {
+    margin-top: 5rem;
+}
+
+.about-double-column-spacing {
+
+}
+
+.about-up-to-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-up-to-margin {
+    margin-top: 2.5rem;
+}
+
+#about .about-up-to-flex a {
+    text-decoration: none;
+} 
+
+#about .about-up-to-flex .body-bold {
+    color: var(--lapis-lazuli);
+}
