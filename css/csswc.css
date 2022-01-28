@@ -1,0 +1,26 @@
+.numbered-list {
+display: flex;
+flex-direction: row;
+gap: 2.5rem;
+}
+
+.numbered-list-text {
+    flex-basis: 90%;
+}
+
+.r-d-process {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    text-align: center;
+    flex-basis: 33%;
+}
+
+.custom-persona-margin {
+    margin: 2.5rem 0 1rem 0;
+}
+
+.small-double-col-gap {
+    gap: 2vw;
+}
