@@ -1,0 +1,68 @@
+#contact .heading-2 {
+    text-transform: none;
+    color: var(--prussian-blue);
+}
+
+#contact .heading-4 {
+    color: var(--prussian-blue);
+}
+
+#contact .hero {
+    color: var(--lapis-lazuli);
+}
+
+#contact .nav--layout {
+    background-color: white;
+}
+
+.contact-img-spacing {
+    justify-self: flex-end;
+    align-self: flex-end;
+    padding-bottom: 3rem;
+}
+
+.contact-hero-margin-top {
+    margin-top: 5rem;
+}
+
+.contact-h2-margin {
+    margin: 3rem 0;
+}
+
+.contact-section-margin {
+    margin-top: 2.5rem;
+}
+
+.input-small{
+    height: 5rem;
+    width: 32rem;
+}
+
+.input-large{
+    height: 17.2rem;
+    width: 82rem;
+}
+
+.input-styling {
+    color: var(--dark-gray);
+    border-radius: 10px;
+    border: solid 1px var(--dark-gray);
+}
+
+.contact-button-styling {
+    height: 5.2rem;
+    width: 8.9rem;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    background-color: var(--candy-pink);
+}
+
+.contact-button-spacing {
+    float: right;
+    margin-top: 1.5rem;
+}
+
+#contact .body-bold {
+    color: white;
+}
